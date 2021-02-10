@@ -1,0 +1,9 @@
+<h1>Welcome {{#if user}} {{user.username}} {{/if}} 👋</h1>
+
+{{#if user}}
+<a href="/private">Private Area</a>
+<a href="/logout">Logout</a>
+{{else}}
+<a href="/signup">Sign Up</a>
+<a href="/login">Log In</a>
+{{/if}}
